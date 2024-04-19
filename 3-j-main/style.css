@@ -1,0 +1,39 @@
+:root{
+    --cor-de-fundo: #1e1e1e;
+    --verde: #5fff5f;
+    --branco: #FFFFFF;
+    --botao-ativo: #3a373a;
+    --botao-inativo: rgba(58,55,94,0.5);
+    --texto-fundo: rgba(58,55,94,0.3);
+}
+
+*{
+    background-color: var(--cor-de-fundo);
+    color: var(--branco);
+}
+.conteudo-principal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+} 
+ .titulo-principal{
+     text-align: center;
+     width: 100%;
+     font-size: 32px;
+}
+
+ .botao{
+     background-color: white;
+     color: white;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     width: 100%;
+     font-size: 18px;
+     padding: 1em;
+
+}
