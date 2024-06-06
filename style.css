@@ -1,80 +1,79 @@
-:root {
-    --cor-de-fundo: #1e1e1e;
-    --verde: #6fff57;
-    --branco: #FFFFFF;
-    --botao-ativo: #3a375e;
+:root{
+    --cor-de-fundo:#1e1e1e;
+    --verde:#5FFF57;
+    --branco:#FFFFFF;
+    --botao-ativo:#3A375E;
     --botao-inativo: rgba(58,55,94,0.5);
-    --texto-fundo: rgba(58,55,94,0.3);
-}
-*{
-   
-    color: var(--branco);
-}
-body{
-    background-color: var(--cor-de-fundo);
+    --texto-fundo: rgba(58,55,94,0.3); 
 }
 
+*{
+    background-color: var(--cor-de-fundo);
+    color: var(--branco);
+}
 span{
-    color: var(--verde);
+   color: #5FFF57;
 }
 .conteudo-principal{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
     max-width: 1200px;
+    width: 100%;
     margin: 0  auto;
-
+    
 }
+
 .titulo-principal{
     text-align: center;
     width: 100%;
     font-size: 32px;
 }
-.botao {
-    background-color: var(--botao-inativo);
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1em;
-    font-size: 18px;
-    width: 100%;
-    border-bottom: 4px solid var (var(--botao-ativo));
-    border-left: 2px solid var (var(--botao-ativo));
-    border-right: 2px solid var (var(--botao-ativo));
-}
-.ativo{
-    background-color: var(--botao-ativo);
-    border-bottom: 4px solid var(--verde);
-}
-.aba-conteudo{
-    background-color: var(--texto-fundo);
-    display: none;
-}
-.aba-conteudo,.ativo{
-    display: flex;
-}
-
-.botoes {
+.botoes{
     display: block;
 
 }
-.botao:first-child{
-    border-radius: 20px 20px 0 0;
+.botao{
+    background-color: var(--botao-inativo);
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-size: 18px;
+    padding: 1em;
+    border-bottom: 4px solid var(--botao-ativo);
+    border-left: 2px solid var(--botao-ativo);
+    border-right: 2px solid var(--botao-ativo);
 }
-.botao:last-child {
-    border-radius: 0 0 20px 20px;
+.botao{
+    border-radius: 20px 20px 20px 20px;
 }
-@media screen and (min-width:700px) {
+.ativo{
+    background-color: var(--botao-ativo);
+    border-bottom: 2px solid var(--verde);
+}
+@media screen and (min-width: 700px) {
     .botoes{
-     display: flex;   
+        display: flex;
+    }
+    .botao{
+        border-radius: 0%;
     }
     .botao:first-child{
-        border-radius: 20px 0 0 20px;
+        border-radius: 20px 0px 0px 20px;
     }
     .botao:last-child{
-        border-radius: 0 20px 20px 0;
+        border-radius: 0px 20px 20px 0px;
     }
+}
+.ativo{
+    background-color: var(--botao-ativo) ;
+}
+.aba-conteudo{
+    display: none;
+}
+.aba-conteudo.ativo{
+    display: block;
 }
